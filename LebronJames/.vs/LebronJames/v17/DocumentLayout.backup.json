@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B02ECA-B1A3-4AA1-831E-8B920BB9827A}|LebronJames\\LebronJames.csproj|c:\\users\\detetochudo\\source\\repos\\lebronjames\\lebronjames\\controllers\\athletecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B02ECA-B1A3-4AA1-831E-8B920BB9827A}|LebronJames\\LebronJames.csproj|solutionrelative:lebronjames\\controllers\\athletecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B02ECA-B1A3-4AA1-831E-8B920BB9827A}|LebronJames\\LebronJames.csproj|c:\\users\\detetochudo\\source\\repos\\lebronjames\\lebronjames\\views\\athlete\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0B02ECA-B1A3-4AA1-831E-8B920BB9827A}|LebronJames\\LebronJames.csproj|solutionrelative:lebronjames\\views\\athlete\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B02ECA-B1A3-4AA1-831E-8B920BB9827A}|LebronJames\\LebronJames.csproj|c:\\users\\detetochudo\\source\\repos\\lebronjames\\lebronjames\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0B02ECA-B1A3-4AA1-831E-8B920BB9827A}|LebronJames\\LebronJames.csproj|solutionrelative:lebronjames\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B02ECA-B1A3-4AA1-831E-8B920BB9827A}|LebronJames\\LebronJames.csproj|c:\\users\\detetochudo\\source\\repos\\lebronjames\\lebronjames\\models\\athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B02ECA-B1A3-4AA1-831E-8B920BB9827A}|LebronJames\\LebronJames.csproj|solutionrelative:lebronjames\\models\\athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Data\\Migrations\\20250713140650_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LebronJames\\Data\\Migrations\\20250713140650_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Views\\Athlete\\Index.cshtml",
+              "RelativeDocumentMoniker": "LebronJames\\Views\\Athlete\\Index.cshtml",
+              "ToolTip": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Views\\Athlete\\Index.cshtml",
+              "RelativeToolTip": "LebronJames\\Views\\Athlete\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-13T14:09:30.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250713140650_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Data\\Migrations\\20250713140650_InitialCreate.cs",
+              "RelativeDocumentMoniker": "LebronJames\\Data\\Migrations\\20250713140650_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Data\\Migrations\\20250713140650_InitialCreate.cs",
+              "RelativeToolTip": "LebronJames\\Data\\Migrations\\20250713140650_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T14:06:50.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LebronJames\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LebronJames\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-13T14:05:38.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AthleteController.cs",
+              "DocumentMoniker": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Controllers\\AthleteController.cs",
+              "RelativeDocumentMoniker": "LebronJames\\Controllers\\AthleteController.cs",
+              "ToolTip": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Controllers\\AthleteController.cs",
+              "RelativeToolTip": "LebronJames\\Controllers\\AthleteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAoAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T14:04:06.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Athlete.cs",
+              "DocumentMoniker": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Models\\Athlete.cs",
+              "RelativeDocumentMoniker": "LebronJames\\Models\\Athlete.cs",
+              "ToolTip": "C:\\Users\\detetochudo\\source\\repos\\LebronJames\\LebronJames\\Models\\Athlete.cs",
+              "RelativeToolTip": "LebronJames\\Models\\Athlete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T14:03:35.865Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

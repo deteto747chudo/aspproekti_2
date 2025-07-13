@@ -1,0 +1,52 @@
+﻿@model LebronJames.Models.Athlete
+@{
+    ViewBag.Title = Model.Name;
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-3">@Model.Name</h1>
+    <h4 class="text-center text-muted">@Model.Sport</h4>
+
+    <div class="row mt-4">
+        <div class="col-md-8 offset-md-2">
+            <p class="lead text-center">@Model.Biography</p>
+        </div>
+    </div>
+
+    <hr />
+
+    <h3 class="text-center mb-4">Photo Gallery</h3>
+    <div class="row justify-content-center">
+        @foreach (var photo in Model.PhotoUrls)
+        {
+            <div class="col-md-3 col-6 mb-4">
+                <img src="@photo" class="img-fluid rounded gallery-img" alt="LeBron James" />
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .gallery-img {
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        border: 2px solid #eee;
+        padding: 4px;
+    }
+
+    .gallery-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('.gallery-img').on('click', function () {
+            window.open($(this).attr('src'), '_blank');
+        });
+    });
+</script>
