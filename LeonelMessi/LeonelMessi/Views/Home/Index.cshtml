@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Lionel Messi Fan Page";
 }
 
@@ -41,18 +41,60 @@
         gap: 1rem;
     }
 
-        .gallery img {
-            width: 100%;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .gallery img {
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-            .gallery img:hover {
-                transform: scale(1.08);
-                box-shadow: 0 8px 24px rgba(255,255,255,0.4);
-            }
+    .gallery img:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 24px rgba(255,255,255,0.4);
+    }
+
+    /* КАЛКУЛАТОР */
+    .calculator {
+        margin-top: 3rem;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    .calculator input,
+    .calculator select,
+    .calculator button {
+        padding: 0.6rem;
+        margin: 0.5rem;
+        font-size: 1rem;
+        border-radius: 6px;
+        border: none;
+    }
+
+    .calculator input,
+    .calculator select {
+        width: 120px;
+    }
+
+    .calculator button {
+        background-color: #00bfa6;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .calculator button:hover {
+        background-color: #009e88;
+    }
+
+    .calculator-result {
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #00ffc3;
+    }
 </style>
 
 <div class="container">
@@ -68,4 +110,45 @@
         <img src="https://cdn.britannica.com/34/212134-050-A7289400/Lionel-Messi-2018.jpg" alt="Lionel Messi 2" onclick="window.open(this.src, '_blank')" />
         <img src="https://www.fcbarcelona.com/photo-resources/2022/08/02/ae5252d1-b79b-4950-9e34-6e67fac09bb0/LeoMessi20092010_pic_fcb-arsenal62.jpg?width=1200&height=750" alt="Lionel Messi 3" onclick="window.open(this.src, '_blank')" />
     </div>
+
+    <!-- Калкулатор -->
+    <div class="calculator">
+        <h2>Калкулатор</h2>
+        <input type="number" id="num1" placeholder="Число 1" />
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">−</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+        </select>
+        <input type="number" id="num2" placeholder="Число 2" />
+        <button onclick="calculate()">Изчисли</button>
+        <div class="calculator-result" id="result">Резултат: </div>
+    </div>
 </div>
+
+<script>
+    function calculate() {
+        const num1 = parseFloat(document.getElementById('num1').value);
+        const num2 = parseFloat(document.getElementById('num2').value);
+        const op = document.getElementById('operation').value;
+        let result;
+
+        if (isNaN(num1) || isNaN(num2)) {
+            result = "Моля, въведете валидни числа.";
+        } else {
+            switch (op) {
+                case "+": result = num1 + num2; break;
+                case "-": result = num1 - num2; break;
+                case "*": result = num1 * num2; break;
+                case "/":
+                    result = num2 !== 0 ? num1 / num2 : "Грешка: деление на нула.";
+                    break;
+                default:
+                    result = "Невалидна операция.";
+            }
+        }
+
+        document.getElementById('result').innerText = "Резултат: " + result;
+    }
+</script>
