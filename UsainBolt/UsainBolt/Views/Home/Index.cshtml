@@ -1,4 +1,4 @@
-﻿@model UsainBolt.Models.Athlete
+@model UsainBolt.Models.Athlete
 
 @{
     ViewData["Title"] = Model.Name + " Fan Page";
@@ -69,6 +69,50 @@
         box-shadow: 0 10px 30px rgba(0,0,0,0.35);
         border-color: #d35400;
     }
+
+    /* Calculator styles */
+    .calculator {
+        margin-top: 40px;
+        text-align: center;
+        background-color: rgba(255,255,255,0.2);
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .calculator input,
+    .calculator select,
+    .calculator button {
+        padding: 10px;
+        margin: 8px;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .calculator input,
+    .calculator select {
+        width: 120px;
+    }
+
+    .calculator button {
+        background-color: #27ae60;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .calculator button:hover {
+        background-color: #219150;
+    }
+
+    .result {
+        margin-top: 15px;
+        font-size: 1.3rem;
+        color: #1a1a1a;
+        font-weight: bold;
+    }
 </style>
 
 <div class="page">
@@ -82,4 +126,44 @@
             <img src="@photo" alt="Photo of @Model.Name" onclick="window.open('@photo', '_blank')" />
         }
     </div>
+
+    <!-- Calculator -->
+    <div class="calculator">
+        <h2>Калкулатор</h2>
+        <input type="number" id="num1" placeholder="Число 1" />
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">−</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+        </select>
+        <input type="number" id="num2" placeholder="Число 2" />
+        <button onclick="calculate()">Изчисли</button>
+        <div class="result" id="result">Резултат: </div>
+    </div>
 </div>
+
+<script>
+    function calculate() {
+        const num1 = parseFloat(document.getElementById('num1').value);
+        const num2 = parseFloat(document.getElementById('num2').value);
+        const op = document.getElementById('operation').value;
+        let result;
+
+        if (isNaN(num1) || isNaN(num2)) {
+            result = "Моля, въведи валидни числа.";
+        } else {
+            switch (op) {
+                case "+": result = num1 + num2; break;
+                case "-": result = num1 - num2; break;
+                case "*": result = num1 * num2; break;
+                case "/":
+                    result = num2 !== 0 ? num1 / num2 : "Грешка: деление на 0.";
+                    break;
+                default: result = "Невалидна операция.";
+            }
+        }
+
+        document.getElementById('result').innerText = "Резултат: " + result;
+    }
+</script>
